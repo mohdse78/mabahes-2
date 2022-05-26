@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+body {
+    background-color: rgba(174, 255, 235, 0.45);
+}
+
+.card {
+    margin: 40px;
+    padding: 0;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(83, 71, 73, 0.62);
+    transition: .3s ease;
+}
+
+.card > img {
+    max-width: 250px;
+}
+
+.Search-box {
+    width: 1000px !important;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.Search-box:focus {
+    border: none;
+    box-shadow: 0 0 15px rgba(83, 71, 73, 0.62);
+}
+
+.not-found {
+    padding-top: 260px;
+    color: rgba(63, 60, 60, 0.62);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.boxMonster {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.boxMonster > img {
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.boxMonster:hover {
+    transform: scaleY(1);
+}
+
+.information > h4 {
+    margin-top: 20px;
+}
+
+.welcome {
+    font-size: 30px;
+    text-align: center;
+    border-right: 1px solid #868686;
+    position: relative;
+}
+
+
+.introduction {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+
+
+.monster1 {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.monster3 {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 60px;
+    left: 150px;
+}
+
+.monster2 {
+    bottom: 50px;
+    left: 80px;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+}
+
+.monster4 {
+    bottom: 60px;
+    right: 100px;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+}
+
+.start-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    position: relative;
+}
+
+.start-container p {
+    font-size: 22px;
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    animation: 2s linear infinite;
+    animation-name: click;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(.5);
+    }
+    25% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(.5);
+    }
+}
+
+.start-container img {
+    position: absolute;
+    top: 30px;
+    right: -170px;
+}
+
+.arrow {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    transform: rotate(150deg);
+}
+
+.introduction span {
+    position: absolute;
+    right: 180px;
+    top: 120px;
+    font-size: 13px;
+    animation: 2s linear infinite;
+    animation-name: click2;
+}
+
+@keyframes click2 {
+    0% {
+        transform: scale(.5);
+    }
+    25% {
+        transform: scale(.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(.5);
+    }
+}
+
+.buy {
+    padding-top: 11px;
+}
+
+.buy button, .buy-card {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #d55050;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.buy-card {
+    margin: 5px 0 10px 20px;
+}
+
+.buy button:hover, .buy-card:hover {
+    background-color: #d31414;
+}
+
+.success {
+    background-color: #59d550;
+    content: 'Done✔';
+}
+
+.link-header{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
